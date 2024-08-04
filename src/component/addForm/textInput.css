@@ -1,0 +1,42 @@
+.text-input-container {
+  margin: 15px;
+  position: relative;
+  width: 150px;
+  height: 40px;
+}
+
+.text-input-container input {
+  font-size: 16px;
+  height: 100%;
+  width: 100%;
+  padding-left: 10px;
+  border: none;
+  border-bottom: 3px solid rgba(241, 195, 118, 0.3);
+  background-color: transparent;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.text-input-container input:focus {
+  border-bottom: 3px solid rgba(241, 195, 118, 1);
+}
+
+.text-input-container label {
+  cursor: text;
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  color: rgba(241, 195, 118, 0.5);
+  transition: all 0.3s ease-in-out;
+}
+
+.text-input-container:focus-within label {
+  top: 0;
+  color: rgb(241, 195, 118, 1);
+}
+
+.text-input-container input:valid + label {
+  top: 0;
+  color: rgba(241, 195, 118, 1);
+}

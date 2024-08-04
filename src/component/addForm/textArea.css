@@ -1,0 +1,14 @@
+textarea {
+  background-color: #f7e6c4;
+  border: none;
+  width: 200px;
+  height: 100px;
+  padding: 10px;
+  transition: all 250ms;
+}
+
+textarea:focus {
+  background-color: #f1c376;
+  border: none;
+  outline: none;
+}
